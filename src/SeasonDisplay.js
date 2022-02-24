@@ -168,7 +168,7 @@ class SeasonDisplay extends React.Component{
          console.log(this.props.cityname)
  
  
-         loadJSON(`http://api.openweathermap.org/data/2.5/forecast?q=${this.props.cityname}&appid=630ee10ce49c0ef1c2ac6043db3652d9`,     
+         loadJSON(`https://api.openweathermap.org/data/2.5/forecast?q=${this.props.cityname}&appid=630ee10ce49c0ef1c2ac6043db3652d9`,     
          (data) =>{
          console.log("success");
          this.weather = data;
@@ -204,7 +204,7 @@ class SeasonDisplay extends React.Component{
         if(this.factor > 0)
         {
             this.factor = this.factor - 1
-        loadJSON(`http://api.openweathermap.org/data/2.5/forecast?q=${this.props.cityname}&appid=630ee10ce49c0ef1c2ac6043db3652d9`,     
+        loadJSON(`https://api.openweathermap.org/data/2.5/forecast?q=${this.props.cityname}&appid=630ee10ce49c0ef1c2ac6043db3652d9`,     
         (data) =>{
         console.log("success");
         this.weather = data;
