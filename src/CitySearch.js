@@ -47,7 +47,7 @@ class CitySearch extends react.Component{
 
         console.log(this.state.value);
 
-        loadJSON(`http://api.openweathermap.org/data/2.5/forecast?q=${this.state.value}&appid=630ee10ce49c0ef1c2ac6043db3652d9`,     
+        loadJSON(`https://api.openweathermap.org/data/2.5/forecast?q=${this.state.value}&appid=630ee10ce49c0ef1c2ac6043db3652d9`,     
         (data) =>{
         console.log("success");
         this.setState({error:""});
